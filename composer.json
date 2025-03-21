@@ -1,0 +1,34 @@
+{
+    "name": "orkestapay/magento-checkout",
+    "description": "OrkestaPay Checkout module for Magento 2",
+    "type": "magento2-module",
+    "minimum-stability": "stable",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors": [
+        {
+            "name": "Orkestapay",
+            "homepage": "https://docs.orkestapay.com/docs/magento",
+            "email": "support@orkestapay.mx"
+        },
+        {
+            "name": "Federico Balderas",
+            "homepage": "https://orkestapay.com",
+            "email": "federico@orkestapay.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Orkestapay\\Checkout\\": ""
+        }
+    }
+}
