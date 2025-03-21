@@ -1,0 +1,57 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de IDEs y editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.project
+.buildpath
+.settings/
+
+# Archivos generados por Composer
+/vendor/
+composer.lock
+
+# Archivos generados por Node.js
+/node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
+
+# Archivos generados durante la compilación
+/generated/
+/pub/static/_cache/
+/pub/static/adminhtml/
+/pub/static/frontend/
+/var/
+
+# Archivos de configuración local
+/app/etc/env.php
+/app/etc/config.local.php
+
+# Archivos de caché y sesión
+/var/cache/
+/var/log/
+/var/page_cache/
+/var/session/
+/var/report/
+
+# Archivos de pruebas
+/dev/tests/integration/tmp/
+/dev/tests/integration/var/
+/dev/tests/unit/tmp/
+/dev/tests/functional/var/
+
+# Otros archivos que generalmente no se quieren incluir
+*.log
+*.zip
+*.tar
+*.gz
+*.rar
+*.sql
