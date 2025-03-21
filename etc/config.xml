@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Orkestapay_Checkout default configuration
+ *
+ * @category    Orkestapay
+ * @package     Orkestapay_Checkout
+ * @author      Federico Balderas
+ * @copyright   Orkestapay (http://orkestapay.com)
+ * @license     http://www.apache.org/licenses/LICENSE-2.0  Apache License Version 2.0
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <csp>
+            <mode>
+                <storefront>
+                    <report_only>0</report_only>
+                </storefront>
+                <admin>
+                    <report_only>0</report_only>
+                </admin>
+            </mode>
+        </csp>
+        <payment>
+            <orkestapay_checkout>
+                <active>0</active>
+                <model>Orkestapay\Checkout\Model\Payment</model>
+                <title>Checkout Redirect</title>
+                <client_secret backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <whsec backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <payment_action>order</payment_action>
+                <order_status>pending_payment</order_status>
+                <allowspecific>0</allowspecific>
+            </orkestapay_checkout>
+        </payment>
+    </default>
+</config>

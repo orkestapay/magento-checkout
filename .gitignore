@@ -1,45 +1,57 @@
-#--------------------------#
-# Magento Default Files    #
-#--------------------------#
+# Archivos del sistema
+.DS_Store
+Thumbs.db
 
-/PATCH_*.sh
+# Archivos de IDEs y editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.project
+.buildpath
+.settings/
 
-/app/etc/local.xml
+# Archivos generados por Composer
+/vendor/
+composer.lock
 
-/media/*
-!/media/.htaccess
+# Archivos generados por Node.js
+/node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+package-lock.json
 
-!/media/customer
-/media/customer/*
-!/media/customer/.htaccess
+# Archivos generados durante la compilación
+/generated/
+/pub/static/_cache/
+/pub/static/adminhtml/
+/pub/static/frontend/
+/var/
 
-!/media/dhl
-/media/dhl/*
-!/media/dhl/logo.jpg
+# Archivos de configuración local
+/app/etc/env.php
+/app/etc/config.local.php
 
-!/media/downloadable
-/media/downloadable/*
-!/media/downloadable/.htaccess
+# Archivos de caché y sesión
+/var/cache/
+/var/log/
+/var/page_cache/
+/var/session/
+/var/report/
 
-!/media/xmlconnect
-/media/xmlconnect/*
+# Archivos de pruebas
+/dev/tests/integration/tmp/
+/dev/tests/integration/var/
+/dev/tests/unit/tmp/
+/dev/tests/functional/var/
 
-!/media/xmlconnect/custom
-/media/xmlconnect/custom/*
-!/media/xmlconnect/custom/ok.gif
-
-!/media/xmlconnect/original
-/media/xmlconnect/original/*
-!/media/xmlconnect/original/ok.gif
-
-!/media/xmlconnect/system
-/media/xmlconnect/system/*
-!/media/xmlconnect/system/ok.gif
-
-/var/*
-!/var/.htaccess
-
-!/var/package
-/var/package/*
-!/var/package/*.xml
-
+# Otros archivos que generalmente no se quieren incluir
+*.log
+*.zip
+*.tar
+*.gz
+*.rar
+*.sql
